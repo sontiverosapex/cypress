@@ -18,13 +18,17 @@ class Helper {
     }
 
     setCurrentPage(page) {
-        return Object.create(this.objects[this.camelCase(page)].prototype);
+        return new this.objects[this.pascalCase(page)]();
     }
 
-    camelCase(str) {
+    pascalCase(str) {
         return (' ' + str + " page").toLowerCase().replace(/[^a-zA-Z0-9]+(.)/g, (m, chr) => {
             return chr.toUpperCase()
         });
+    }
+
+    camelCase(str) {
+        return str.toLowerCase().replace(/[^a-zA-Z0-9]+(.)/g, (m, chr) => chr.toUpperCase());
     }
 }
 

@@ -1,6 +1,12 @@
-class HomePage{
+import BasePage from "./BasePage";
 
-    visit(){
+class HomePage extends BasePage {
+
+    // WEB ELEMENTS
+    shoppingCart = "[class='action showcart']";
+
+    // WEB ACTIONS
+    visit() {
         cy.visit("/");
     }
 
