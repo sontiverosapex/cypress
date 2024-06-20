@@ -3,7 +3,13 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test-gear-feature": "npx cypress run --spec cypress/features/gear.feature -e",
+    "test-home-feature": "npx cypress run --spec cypress/features/home.feature -e",
+    "test-men-feature": "npx cypress run --spec cypress/features/men.feature -e",
+    "test-sale-feature": "npx cypress run --spec cypress/features/sale.feature -e",
+    "test-training-feature": "npx cypress run --spec cypress/features/training.feature -e",
+    "test-whats-new-feature": "npx cypress run --spec cypress/features/whats_new.feature -e",
+    "test-women-feature": "npx cypress run --spec cypress/features/women.feature -e"
   },
   "keywords": [],
   "author": "",
