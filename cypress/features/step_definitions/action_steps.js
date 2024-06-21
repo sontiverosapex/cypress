@@ -1,4 +1,4 @@
-import {Given, When, Then, And} from "cypress-cucumber-preprocessor/steps";
+import {Given, When, Then, And, After} from "cypress-cucumber-preprocessor/steps";
 import helper from "../../utils/helper";
 
 Then("the user clicks the {string} element", (element) => {
