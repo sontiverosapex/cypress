@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
+    "test-all-features": "npx cypress run --spec cypress/features/*.feature",
     "test-gear-feature": "npx cypress run --spec cypress/features/gear.feature -e",
     "test-home-feature": "npx cypress run --spec cypress/features/home.feature -e",
     "test-men-feature": "npx cypress run --spec cypress/features/men.feature -e",
